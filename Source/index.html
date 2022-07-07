@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesia - Calcular</title>
+    <link rel="icon" href="/Images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="/Images/logo.png" alt="indonesia_shop">
+    </nav>
+    <main class="main">
+        <div class="content">
+            <div class="content-main">
+                <h2>Calcular descuento</h2>
+                <div class="content-form">
+                    <div class="content-input-form">
+                        <label for="input-one">Precio del producto</label>
+                        <span>Campo obligatorio*</span>
+                        <input type="number" placeholder="Ingrese el monto" id="input-one">
+                    </div>
+                    <div class="content-input-form">
+                        <label for="input-two">Precio del producto</label>
+                        <span>Campo obligatorio*</span>
+                        <input type="number" placeholder="Ingrese el monto" id="input-two">
+                    </div>
+                    <div class="content-input-form">
+                        <label for="input-three">Precio del producto</label>
+                        <input type="number" placeholder="Ingrese el monto" id="input-three">
+                    </div>
+                    <div class="content-input-form">
+                        <label for="select-one">Descuento</label>
+                        <span>Campo obligatorio*</span>
+                        <select name="" id="select-one">
+                            <option selected value="0">Seleccionar descuento...</option>
+                            <option value="30">30%</option>
+                            <option value="60">60%</option>
+                        </select>
+                    </div>
+                    <div class="content-input-form">
+                        <button id="button-one" type="button" onclick="calcular()">Calcular</button>
+                    </div>
+                    <div class="content-input-form">
+                        <p style="color: #FFFFFF;" id="valueInput"></p>
+                    </div>
+                    <div class="content-input-form">
+                        <a id="a-one" onclick="limpiarCampos()">Limpiar campos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
