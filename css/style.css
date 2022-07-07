@@ -15,11 +15,6 @@
 
 body {
     background-color: var(--bg-color);
-    /* background-image: url(/Images/testeo.jpg);
-    background-color: rgba(0, 0, 0, 0.335);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 .navbar {
