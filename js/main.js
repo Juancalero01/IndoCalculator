@@ -44,21 +44,21 @@ function getDetail() {
 function getTotal(minNumber) {
     if (inputValueThree.value == 0) {
         if (minNumber == inputValueOne.value) {
-            return Number(inputValueTwo.value) + Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100;
+            return (minNumber - Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100) + Number(inputValueTwo.value);
         }
         else if (minNumber == inputValueTwo.value) {
-            return Number(inputValueOne.value) + Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100;
+            return (minNumber - Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100) + Number(inputValueOne.value);
         }
     }
     else {
         if (minNumber == inputValueOne.value) {
-            return Number(inputValueTwo.value) + Number(inputValueThree.value) + Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100;
+            return (minNumber - Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100) + (Number(inputValueTwo.value) + Number(inputValueThree.value));
         }
         else if (minNumber == inputValueTwo.value) {
-            return Number(inputValueOne.value) + Number(inputValueThree.value) + Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100;
+            return (minNumber - Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100) + (Number(inputValueOne.value) + Number(inputValueThree.value));
         }
         else if (minNumber == inputValueThree.value) {
-            return Number(inputValueOne.value) + Number(inputValueTwo.value) + Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100;
+            return (minNumber - Math.floor(minNumber * selectValueOne.options[selectValueOne.selectedIndex].value) / 100) + (Number(inputValueOne.value) + Number(inputValueTwo.value));
         }
     }
 }
