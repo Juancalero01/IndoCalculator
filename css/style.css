@@ -36,7 +36,6 @@ body {
     align-items: center;
 }
 
-
 .content-main {
     width: 50%;
     padding: 40px;
@@ -188,33 +187,22 @@ body {
 
 
 
-/* .modal-content-data {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.modal-content-data h2 {
-    width: 100%;
-    text-align: center;
-    color: var(--second-color);
-}
-
-
-.modal-content-total {
-
-} */
-
-
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1290px) {
     .content-main {
         width: 60%;
+    }
+
+    .modal-content {
+        width: 50%;
     }
 }
 
 @media only screen and (max-width: 800px) {
     .content-main {
         width: 100%;
+    }
+
+    .modal-content {
+        width: 80%;
     }
 }
