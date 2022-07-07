@@ -38,7 +38,7 @@ body {
 
 
 .content-main {
-    width: 60%;
+    width: 50%;
     padding: 40px;
 }
 
@@ -120,6 +120,91 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.565);
+}
+
+.modal-content {
+    background-color: var(--third-color);
+    margin: 10% auto;
+    padding: 40px;
+    border: 1px solid var(--first-color);
+    width: 30%;
+    border-radius: 5px;
+}
+
+.modal-content-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-content-title h2 {
+    color: var(--second-color);
+}
+
+.modal-content-title span {
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content-price {
+    padding: 20px 0px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    font-weight: 200;
+}
+
+.pricetotal {
+    align-items: center;
+    background-color: var(--third-color);
+    border: 1px solid var(--first-color);
+    height: 60px;
+    border-radius: 5px;
+}
+
+.modal-content-pricemin {
+    padding: 20px 0px;
+}
+
+.modal-content-totales {
+    padding: 20px 0px;
+}
+
+
+
+/* .modal-content-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.modal-content-data h2 {
+    width: 100%;
+    text-align: center;
+    color: var(--second-color);
+}
+
+
+.modal-content-total {
+
+} */
 
 
 @media only screen and (max-width: 1240px) {

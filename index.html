@@ -20,7 +20,7 @@
     <main class="main">
         <div class="content">
             <div class="content-main">
-                <h2>Calcular descuento</h2>
+                <h2>CALCULAR DESCUENTO</h2>
                 <div class="content-form">
                     <div class="content-input-form">
                         <label for="input-one">Precio del producto</label>
@@ -46,19 +46,68 @@
                         </select>
                     </div>
                     <div class="content-input-form">
-                        <button id="button-one" type="button" onclick="calcular()">Calcular</button>
+                        <button id="button-one" type="button" onclick="getDetail()">Calcular</button>
                     </div>
                     <div class="content-input-form">
                         <p style="color: #FFFFFF;" id="valueInput"></p>
                     </div>
                     <div class="content-input-form">
-                        <a id="a-one" onclick="limpiarCampos()">Limpiar campos</a>
+                        <a id="a-one" onclick="clearFields()">Limpiar campos</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-content-title">
+                <h2>DETALLE DE DESCUENTO</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-content-price">
+                <div class="price">
+                    <h4>Precio del producto: </h4>
+                    <h4 id="priceOne"></h4>
+                </div>
+                <div class="price">
+                    <h4>Precio del producto: </h4>
+                    <h4 id="priceTwo"></h4>
+                </div>
+                <div class="price" id="priceop">
+                    <h4>Precio del producto: </h4>
+                    <h4 id="priceThree"></h4>
+                </div>
+                <div class="price">
+                    <h4>Descuento del: </h4>
+                    <h4 id="desc"></h4>
+                </div>
+            </div>
+            <hr>
+            <div class="modal-content-pricemin">
+                <div class="price">
+                    <h4>Precio menor: </h4>
+                    <h4 id="pricemin"></h4>
+                </div>
+                <div class="price">
+                    <h4>Precio menor con descuento: </h4>
+                    <h4 id="pricemindesc"></h4>
+                </div>
+            </div>
+            <hr>
+            <div class="modal-content-totales">
+                <div class="price">
+                    <h3>Subtotal: </h3>
+                    <h3 id="subtotal"></h3>
+                </div>
+                <div class="price pricetotal">
+                    <h3>Total: </h3>
+                    <h3 id="total"></h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <script src="js/main.js"></script>
 </body>
 
